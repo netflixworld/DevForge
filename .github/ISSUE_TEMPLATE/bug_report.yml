@@ -1,0 +1,34 @@
+name: Bug report / Relatar erro
+description: Report a DevForge problem without posting secrets / Relate um problema sem publicar segredos.
+body:
+  - type: input
+    id: command
+    attributes:
+      label: Command or feature / Comando ou recurso
+      placeholder: /project create
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Passos para reproduzir
+      description: Do not include real tokens, private IDs, or user data. / Não inclua tokens, IDs privados ou dados de usuários.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result / Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result and sanitized logs / Resultado obtido e logs sem segredos
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Node.js and hosting / Node.js e hospedagem
+      placeholder: Node.js 24.17.0, Windows 10

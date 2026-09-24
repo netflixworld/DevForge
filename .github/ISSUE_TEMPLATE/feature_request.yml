@@ -1,0 +1,22 @@
+name: Feature request / Sugerir recurso
+description: Suggest a bot or community improvement / Sugira uma melhoria.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve / Problema a resolver
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed experience / Experiência sugerida
+      description: Describe the command or interaction a member would use. / Descreva o comando ou interação do membro.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Existing workaround / Solução atual
+    validations:
+      required: false
